@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #1f1f1f;
+    height: 100%;
 }
 
 div{
@@ -72,13 +73,14 @@ div{
 
 .body-2{
     display: block;   
+    padding: 20px
 }
 
 .search-container{
     margin: 0 auto;
     width: auto;
     max-width: 584px;
-    padding-top: 6px;
+    padding-top: 10px;
     position: relative;
 }
 
@@ -124,27 +126,26 @@ div{
 }
 
 .src{
+    display: flex;
     color: transparent;
     white-space: pre;
-    position: absolute;
+    position: relative;
     pointer-events: none;
 }
 
 #search-id{
+    display: flex;
     font-family: Arial, sans-serif;
     line-height: 22px;
-    padding-top: 11px;
+    padding: 10px, 0, 0, 0;
     overflow-x: hidden;
-    display: flex;
-
+    
     font-size: 16px;
     flex: 100%;
-
     resize: none;
     background-color: transparent;
     border: none;
     margin: 0;
-    padding: 0;
     color: rgba(0, 0, 0, .87);
     word-wrap: break-word;
     outline: none;
@@ -153,5 +154,110 @@ div{
 }
 
 .search-end{
+    display: flex;
+    flex: 0 0 auto;
+    align-items: stretch;
+    flex-direction: row;
+    height: 44px;
+}
 
+.voice-search{
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+}
+
+.hey-google{
+    display: flex;
+    padding-top: 15px;
+    height: 70px;
+    justify-content: center;
+}
+
+.google-prompts{
+    padding: 2px 15px 12px 15px;
+    margin: 0 5px 0 5px;
+    height: 30px;
+    background-color: #f1f1f2;
+    align-self: center;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.p{
+    vertical-align: middle;
+}
+
+.body-3{
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 70px;
+}
+
+.body-5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f2f2f2;
+    box-sizing: border-box;
+
+}
+
+.country{
+    padding: 15px 30px;
+    border-bottom: 1px solid #ceced0;
+    font-size: 15px;
+    color: var(--YLNNHc);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.advert{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 0;
+}
+
+.message{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    order: 1;
+}
+
+.foot-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+
+.ad{
+    display: block;
+    padding: 15px;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+    text-decoration: none;
+    color: #1f1f1f;
 }
