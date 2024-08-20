@@ -101,7 +101,7 @@ div{
 
 .search-box-elm{
     display: flex;
-    flex: auto;
+    flex: 1;
     padding-right: 8px;
 }
 
@@ -126,10 +126,9 @@ div{
 }
 
 .src{
-    display: flex;
     color: transparent;
     white-space: pre;
-    position: relative;
+    position: absolute;
     pointer-events: none;
 }
 
@@ -137,7 +136,7 @@ div{
     display: flex;
     font-family: Arial, sans-serif;
     line-height: 22px;
-    padding: 10px, 0, 0, 0;
+    padding-top: 11px;
     overflow-x: hidden;
     
     font-size: 16px;
@@ -198,8 +197,6 @@ div{
 .body-3{
     flex-grow: 1;
     flex-shrink: 0;
-    box-sizing: border-box;
-    height: 70px;
 }
 
 .body-5{
